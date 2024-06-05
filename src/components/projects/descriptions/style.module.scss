@@ -1,35 +1,49 @@
-.descriptions{
+.descriptions {
     position: absolute;
     top: 3px;
     height: 100%;
     width: 100%;
     z-index: 2;
     pointer-events: none;
-    .description{
-        background-color: #ec4e39;
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        padding-left: 10%;
-        padding-right: 10%;
-        clip-path: inset(50% 0 50%);
-        transition: clip-path .4s;
-        p{
-            &:nth-of-type(1){
-                color: #010101;
-                text-transform: uppercase;
-                font-weight: 700;
-                font-size: 8vw;
-                line-height: 7.5vw;
-                margin: 0px;
-                position: relative;
-                z-index: 1;
-            }
-            &:nth-of-type(2){
-                width: 40%;
-                font-size: 3vh;
-                font-weight: 700;
-            }
-        }
-    }
+}
+
+.descriptions .description {
+    background-color: #ec4e39;
+    display: -webkit-box; /* Old WebKit */
+    display: -moz-box; /* Old Firefox */
+    display: -ms-flexbox; /* IE 10 */
+    display: -webkit-flex; /* Flexbox */
+    display: flex;
+    -webkit-box-pack: justify; /* Old WebKit */
+    -moz-box-pack: justify; /* Old Firefox */
+    -ms-flex-pack: justify; /* IE 10 */
+    -webkit-justify-content: space-between; /* Modern */
+    justify-content: space-between;
+    -webkit-box-align: center; /* Old WebKit */
+    -moz-box-align: center; /* Old Firefox */
+    -ms-flex-align: center; /* IE 10 */
+    -webkit-align-items: center; /* Modern */
+    align-items: center;
+    padding-left: 10%;
+    padding-right: 10%;
+    -webkit-clip-path: inset(50% 0 50%);
+    clip-path: inset(50% 0 50%);
+    transition: clip-path 0.4s;
+}
+
+.descriptions .description p:nth-of-type(1) {
+    color: #010101;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 8vw;
+    line-height: 7.5vw;
+    margin: 0;
+    position: relative;
+    z-index: 1;
+}
+
+.descriptions .description p:nth-of-type(2) {
+    width: 40%;
+    font-size: 1.3vw;
+    font-weight: 700;
 }
