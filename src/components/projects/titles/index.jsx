@@ -34,9 +34,9 @@ function Title({data, setSelectedProject}) {
                 onMouseOver={() => {setSelectedProject(i)}}
                 onMouseLeave={() => {setSelectedProject(null)}}
             >
-                <motion.p style={{clipPath: clip}}>
+                {/* <motion.p style={{clipPath: clip}}>
                     {title}
-                </motion.p>
+                </motion.p> */}
                 <p>
                     {title}
                 </p>
